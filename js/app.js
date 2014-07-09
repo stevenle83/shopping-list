@@ -2,10 +2,10 @@ $(document).ready(function() {
 	
 	$('.add').on('click', function() {
 		var item = $('.inputField').val();
-		$('.inputField').val('');
 		$('.listItem').append('<div class="item"><li class="input list-group-item">' +item+ '</li><div class="remove btn btn-default">REMOVE</div></div>');
-			
-		$('.listItem').on('click', '.remove', function() {
+		$('.inputField').val('');
+
+		$('.remove').on('click', function() {
 			$(this).parent('.item').remove();
 		});
 	});
@@ -15,3 +15,4 @@ $(document).ready(function() {
 	});
 
 });
+
