@@ -14,5 +14,9 @@ $(document).ready(function() {
 		$(this).toggleClass("cross");
 	});
 
+	$('.listItem').on('tap', '.input', function () {
+		$(this).toggleClass("cross");
+	});
+
 });
 
