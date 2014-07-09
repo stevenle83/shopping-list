@@ -1,9 +1,35 @@
-body {
-	background: #5c1b91;
+body {	
+	margin: 0 auto;
+	background: #b8b8b8;
 }
 
 .header {
 	text-align: center;
+	color: #e8dae8;
+	font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+	background: #5c1b91;
+}
+
+.inputField{
+	background: #5c1b91;
+	color: #e8dae8;
+}
+
+.add {
+	background: #4a3e4d;
+	color: #fff;
+}
+
+.add:focus {
+	background: #7e7780;
+	color: #fff;
+	outline-color: none;
+}
+
+.add:hover {
+	background: #7e7780;
+	color: #fff;
+	outline-color: none;
 }
 
 .itemlist {
@@ -19,9 +45,22 @@ body {
 
 .remove {
 	margin-left: 2%;
+	background: #5b2266;
+	color: #fff;
 }
 
+.remove:hover{
+	background: #893899;
+	color: #fff;
+}
+
+.input {
+	font-weight: bold;
+	font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif; 
+	font-size: 17px;
+}
 .cross {
 	text-decoration: line-through;
-	background: #69686b;
+	background: #f4edf5;
 }
+
