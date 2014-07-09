@@ -1,22 +1,32 @@
 $(document).ready(function() {
-	
+
 	$('.add').on('click', function() {
 		var item = $('.inputField').val();
-		$('.listItem').append('<div class="item"><li class="input list-group-item">' +item+ '</li><div class="remove btn btn-default">REMOVE</div></div>');
 		$('.inputField').val('');
-
+		$('<div class="item"><li class="input list-group-item">' +item+ '</li><div class="remove btn btn-default">REMOVE</div></div>').appendTo('.listItem').hide().fadeIn('slow');
+		
 		$('.remove').on('click', function() {
-			$(this).parent('.item').remove();
+			$(this).parent('.item').fadeOut('slow');
 		});
 	});
-
+		
 	$('.listItem').on('click', '.input', function () {
 		$(this).toggleClass("cross");
 	});
 
-	$('.listItem').on('tap', '.input', function () {
-		$(this).toggleClass("cross");
+
+	$('.add').on('tap', function() {
+		var item = $('.inputField').val();
+		$('.inputField').val('');
+		$('<div class="item"><li class="input list-group-item">' +item+ '</li><div class="remove btn btn-default">REMOVE</div></div>').appendTo('.listItem').hide().fadeIn('slow');
+
+		$('.remove').on('tap', function() {
+			$(this).parent('.item').fadeOut('slow');
+		});
 	});
+	
+		$('.listItem').on('tap', '.input', function () {
+			$(this).toggleClass("cross");
+		});
 
 });
-
