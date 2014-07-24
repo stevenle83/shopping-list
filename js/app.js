@@ -6,7 +6,7 @@ $(document).ready(function() {
 		$('<div class="item"><li class="input list-group-item">' +item+ '</li><div class="remove btn btn-default">REMOVE</div></div>').appendTo('.listItem').hide().fadeIn('slow');	
 	});
 		
-	$('.remove').on('click', function() {
+	$('.listItem').on('click', '.remove', function() {
 		$(this).parent('.item').fadeOut('slow');
 	});
 		
@@ -24,7 +24,7 @@ $(document).ready(function() {
 		$('<div class="item"><li class="input list-group-item">' +item+ '</li><div class="remove btn btn-default">REMOVE</div></div>').appendTo('.listItem').hide().fadeIn('slow');	
 	});
 	
-	$('.remove').on('tap', function() {
+	$('.listItem').on('tap', '.remove', function() {
 		$(this).parent('.item').fadeOut('slow');
 	});
 

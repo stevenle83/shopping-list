@@ -42,6 +42,9 @@ body {
 	width: 70%;
 	display: inline-block;
 	cursor: pointer;
+	font-weight: bold;
+	font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif; 
+	font-size: 17px;
 }
 
 .remove {
@@ -55,11 +58,10 @@ body {
 	color: #fff;
 }
 
-.input {
-	font-weight: bold;
-	font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif; 
-	font-size: 17px;
+.item {
+	margin-top: 1%;	
 }
+
 .cross {
 	text-decoration: line-through;
 	background: #f4edf5;
